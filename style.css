@@ -757,29 +757,53 @@ ul { list-style: none; }
 .vision-list {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
+  margin-top: 40px;
 }
 
 .vision-item {
   text-align: center;
+  max-width: 200px;
 }
 
-.vision-icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 12px;
+.vision-icon-wrap {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, rgba(196,168,130,0.08), rgba(196,168,130,0.18));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vision-item:hover .vision-icon-wrap {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(196,168,130,0.2);
+}
+
+.vision-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .vision-item p {
-  font-size: 0.9rem;
-  color: var(--charcoal);
+  font-size: 0.88rem;
+  color: #888;
   font-weight: 400;
+  line-height: 1.7;
 }
 
 @media (max-width: 768px) {
   .vision-list {
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
+    align-items: center;
   }
 }
 
