@@ -1249,6 +1249,49 @@ ul { list-style: none; }
   margin-bottom: 12px;
 }
 
+/* ============================================
+   Monitor
+   ============================================ */
+.monitor {
+  background: var(--white);
+}
+
+.monitor-box {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.monitor-box p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.monitor-box ul {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.monitor-box li {
+  font-size: 0.9rem;
+  color: var(--gray);
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.monitor-box li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
 .cta-line-main {
   text-align: center;
   margin-top: 32px;
